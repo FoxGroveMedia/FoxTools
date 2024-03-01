@@ -3,7 +3,9 @@
   "publisher": "FoxGroveMedia",
   "displayName": "FoxTools",
   "description": "A set of dev tools created by Fox Grove Media.",
-  "version": "0.0.1",
+  "repository": "https://github.com/FoxGroveMedia/FoxTools",
+  "icon": "fox-icon.png",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.87.0"
   },
