@@ -31,6 +31,10 @@ Using the Extension is quite simple:
 
 ## Release Notes
 
+### 0.0.3
+
+* Adding instructions to readme, and a demo screenshot.
+
 ### 0.0.2
 
 * Updating the readme.
