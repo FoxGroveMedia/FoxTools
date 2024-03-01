@@ -13,9 +13,21 @@ Happy coding, my friend! 💻 🚀
 Yours in bytes and bits,
 Mr. Fox 🦊
 
+---
+
+![demo](demo.gif)
+
 ## Features
 
 * **Remove Fontawesome Comments** This method removes the comments from the Fontawesome SVG images.
+
+## How to Use
+
+Using the Extension is quite simple:
+
+* **PC**: `Ctrl+Shift+P` then start typing in `fox`, and select `Fox: Remove Fontawesome SVG Comments`.
+* **MacOS**: `Cmd+Shift+P` then start typing in `fox`, and select `Fox: Remove Fontawesome SVG Comments`.
+* **Linux**: `Ctrl+Shift+P` then start typing in `fox`, and select `Fox: Remove Fontawesome SVG Comments`.
 
 ## Release Notes
 
