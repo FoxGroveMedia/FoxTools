@@ -16,14 +16,11 @@ function activate(context)
             return;
         }
 
-        // Define your regex pattern
-        const regex = /<!--!Font Awesome(.*?)-->/gm;
-
         // Get the entire text from the editor
         const text = editor.document.getText();
 
         // Find and replace occurrences using regex
-        const newText = text.replace(regex, '');
+        const newText = text.replace(/<!--!Font Awesome(.*?)-->/gm, '');
 
         // Replace the text in the editor
         editor.edit(editBuilder => {
@@ -49,15 +46,11 @@ function activate(context)
             return;
         }
 
-        // Define your regex pattern
-        const regex = /<svg (.*?) viewBox=/gm;
-        
-
         // Get the entire text from the editor
         const text = editor.document.getText();
 
         // Find and replace occurrences using regex
-        const newText = text.replace(regex, 'class="w-6 h-6" fill="currentColor" ');
+        const newText = text.replace(/(?<=<svg\s)xmlns="http:\/\/www\.w3\.org\/2000\/svg"(?=\sviewBox=)/gm, 'class="w-6 h-6" fill="currentColor"');
 
         // Replace the text in the editor
         editor.edit(editBuilder => {
