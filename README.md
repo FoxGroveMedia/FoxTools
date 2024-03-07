@@ -31,6 +31,10 @@ Using the Extension is quite simple:
 
 ## Release Notes
 
+### 0.0.4
+
+* Adding a new method to replace the xmlns attribute with the class and fill attributes.
+
 ### 0.0.3
 
 * Adding instructions to readme, and a demo screenshot.
