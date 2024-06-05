@@ -5,7 +5,7 @@
   "description": "A set of dev tools created by Fox Grove Media.",
   "repository": "https://github.com/FoxGroveMedia/FoxTools",
   "icon": "fox-icon.png",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "engines": {
     "vscode": "^1.87.0"
   },
@@ -15,14 +15,19 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "fox.remove-fontawesome-comments",
-      "title": "Fox: Remove Fontawesome SVG Comments"
-    },
-    {
-      "command": "fox.cleanup-fontawesome-svg",
-      "title": "Fox: Cleanup Fontawesome SVG tag"
-    }]
+    "commands": [
+      {
+        "command": "fox.clean-everything",
+        "title": "Fox: Clean Everything"
+      },
+      {
+        "command": "fox.remove-fontawesome-comments",
+        "title": "Fox: Remove Fontawesome SVG Comments"
+      },
+      {
+        "command": "fox.cleanup-fontawesome-svg",
+        "title": "Fox: Cleanup Fontawesome SVG tag"
+      }]
   },
   "scripts": {
     "lint": "eslint .",

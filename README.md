@@ -31,6 +31,14 @@ Using the Extension is quite simple:
 
 ## Release Notes
 
+### 0.0.6
+
+* Adding a new method to clean the xmlns, and remove the comments at the same time.
+
+### 0.0.5
+
+* Minor bug fixes.
+
 ### 0.0.4
 
 * Adding a new method to replace the xmlns attribute with the class and fill attributes.
