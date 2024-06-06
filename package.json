@@ -5,7 +5,7 @@
   "description": "A set of dev tools created by Fox Grove Media.",
   "repository": "https://github.com/FoxGroveMedia/FoxTools",
   "icon": "fox-icon.png",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "engines": {
     "vscode": "^1.87.0"
   },

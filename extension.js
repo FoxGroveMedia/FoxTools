@@ -8,7 +8,7 @@ function activate(context)
     /*
     * Remvoe Fontawesome comments
     */
-    let removeComment = vscode.commands.registerCommand('fox.clean-everything', function () {
+    let cleanEverything = vscode.commands.registerCommand('fox.clean-everything', function () {
         // Get the active text editor
         const editor = vscode.window.activeTextEditor;
         if (!editor) {
@@ -34,8 +34,10 @@ function activate(context)
             editBuilder.replace(documentRange, comment);
         });
 
-        vscode.window.showInformationMessage('All Fontawesome SVGs Cleaned Successfully.');
+        vscode.window.showInformationMessage('All Fontawesome SVGs have been cleaned successfully!');
     });
+
+    context.subscriptions.push(cleanEverything);
 
     /*
     * Remvoe Fontawesome comments

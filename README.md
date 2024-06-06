@@ -29,29 +29,6 @@ Using the Extension is quite simple:
 * **MacOS**: `Cmd+Shift+P` then start typing in `fox`, and select `Fox: Remove Fontawesome SVG Comments`.
 * **Linux**: `Ctrl+Shift+P` then start typing in `fox`, and select `Fox: Remove Fontawesome SVG Comments`.
 
-## Release Notes
+### Change Log
 
-### 0.0.6
-
-* Adding a new method to clean the xmlns, and remove the comments at the same time.
-
-### 0.0.5
-
-* Minor bug fixes.
-
-### 0.0.4
-
-* Adding a new method to replace the xmlns attribute with the class and fill attributes.
-
-### 0.0.3
-
-* Adding instructions to readme, and a demo screenshot.
-
-### 0.0.2
-
-* Updating the readme.
-* Adding a package icon.
-
-### 0.0.1
-
-* Initial build.
+You can read the full [Change Log here](https://github.com/FoxGroveMedia/FoxTools/blob/master/CHANGELOG.md).
