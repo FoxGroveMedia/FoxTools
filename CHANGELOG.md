@@ -2,6 +2,12 @@
 
 All notable changes to the FoxTools extension will be documented in this file.
 
+## [0.0.8] - 2024-06-06
+
+### Changed
+
+- Fixed a bug where none of the methods would run
+
 ## [0.0.7] - 2024-06-06
 
 ### Changed

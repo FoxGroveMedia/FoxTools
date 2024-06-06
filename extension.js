@@ -16,22 +16,17 @@ function activate(context)
             return;
         }
 
-        // Get the entire text from the editor
-        const code = editor.document.getText();
-
         // Find and replace occurrences using regex
-        const xmlns = code.replace(/xmlns="http:\/\/www\.w3\.org\/2000\/svg"/gm, 'class="w-6 h-6" fill="currentColor"');
-
-        // Find and replace occurrences using regex
-        const comment = code.replace(/<!--!Font Awesome(.*?)-->/gm, '');
+        const cleanedTxt = editor.document.getText()
+            .replace(/xmlns="http:\/\/www\.w3\.org\/2000\/svg"/gm, 'class="w-6 h-6" fill="currentColor"')
+            .replace(/<!--!Font Awesome(.*?)-->/gm, '');
 
         // Replace the text in the editor
         editor.edit(editBuilder => {
             const documentStart = new vscode.Position(0, 0);
             const documentEnd = new vscode.Position(editor.document.lineCount + 1, 0);
             const documentRange = new vscode.Range(documentStart, documentEnd);
-            editBuilder.replace(documentRange, xmlns);
-            editBuilder.replace(documentRange, comment);
+            editBuilder.replace(documentRange, cleanedTxt);
         });
 
         vscode.window.showInformationMessage('All Fontawesome SVGs have been cleaned successfully!');
